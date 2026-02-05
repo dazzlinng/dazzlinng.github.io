@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,125 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 教育背景
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+### 华南师范大学 | 计算机科学与技术 | 本科
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**时间**：2023年9月 — 2027年6月
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- **GPA**：3.87 / 5.0
+- **主修课程**：数据结构、操作系统、编译原理、计算机网络、数据库科学基础应用、离散数学、微积分、线性代数
+- **奖学金**：2024-2025 学年度本科生优秀学生奖学金
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+---
+
+## 研究方向
+
+- 计算机视觉
+- AI 协作（Prompt Engineering）
+- 数学建模
+- 机器人研发
+- 药品标准智能解析
+
+---
+
+## 研究与项目经历
+
+### 广东省药检所 GDIDC 合作项目
+
+**时间**：2025年10月 — 至今
+
+研发药品标准智能解析与 Agent 知识引擎。
+
+### Oxford University STEM 暑期科研项目
+
+**时间**：2025年8月
+
+系统架构设计与量化建模，获 **Excellent** 评价。
+
+### 全国大学生数学建模竞赛
+
+**时间**：2024年9月
+
+"板凳龙"动力学仿真，获 **广东省二等奖**。
+
+---
+
+## 实习经历
+
+### 苏州伟创电气设备技术有限公司 | 研发助理实习生
+
+**时间**：2025年7月
+
+**地点**：深圳，中国
+
+---
+
+## 语言能力
+
+| 考试 | 成绩 | 说明 |
+|------|------|------|
+| 雅思 | 7.5 | 口语流利 |
+| 英语六级 | 535 分 | - |
+| 英语四级 | 608 分 | - |
+
+---
+
+## 技术技能
+
+### 编程语言
+
+- Python
+- C/C++
+- Java
+
+### AI 工具
+
+- Claude
+- DeepSeek
+- Gemini
+- Prompt Engineering
+
+### 其他
+
+- 数学建模
+- 数据分析
+- 机器学习基础
+
+---
+
+## 竞赛与荣誉
+
+| 时间 | 奖项 | 级别 |
+|------|------|------|
+| 2024年9月 | 全国大学生数学建模竞赛广东省二等奖 | 省级 |
+| 2024-2025 | 本科生优秀学生奖学金 | 校级 |
+
+---
+
+## 体育荣誉
+
+- 游泳校赛多项冠军
+- 长跑银牌
+
+---
+
+## 社会实践
+
+- 家教教学经历
+
+---
+
+## 联系方式
+
+- 📧 **邮箱**：1440703119@qq.com
+- 📱 **电话**：+86 133-1643-1388
+- 📍 **地点**：广东广州
+- 💼 **LinkedIn**：[yuhao-duan-9b1477361](https://www.linkedin.com/in/yuhao-duan-9b1477361)
+- 💻 **GitHub**：[dazzling](https://github.com/dazzling)
+
+---
+
+## 下载简历
+
+如需下载完整 PDF 简历，请点击：[简历 PDF](/assets/cv.pdf)

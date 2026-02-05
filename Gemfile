@@ -7,6 +7,8 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
+  gem 'csv'         # Ruby 3.4.0+ compatibility
+  gem 'bigdecimal'  # Ruby 3.4.0+ compatibility
 end
 
 gem 'github-pages'
