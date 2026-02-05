@@ -13,9 +13,9 @@ title                    : "段宇昊的个人主页"
 title_separator          : "-"
 name                     : &name "段宇昊"
 description              : &description "段宇昊的个人学术主页 - 华南师范大学计算机科学与技术专业本科生，研究方向为机器学习、自然语言处理和智能问答"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://dazzling.github.io
-baseurl                  : ""
-repository               : "dazzling/dazzling.github.io"
+url                      : https://dazzlinng.github.io
+baseurl                  : "https://dazzlinng.github.io"
+repository               : "dazzlinng/dazzling.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
