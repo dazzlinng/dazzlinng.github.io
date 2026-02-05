@@ -21,9 +21,9 @@ redirect_from:
 
 ### 导师信息
 
-**导师**：[郝天永](https://tempdb.scholat.com/haoty)
+**导师**：<a href="https://tempdb.scholat.com/haoty" target="_blank" class="highlight-link">郝天永</a>
 
-**实验室**：[华南师范大学文本分析与挖掘实验室](https://tony-hao.github.io/TAMLab/outcome.html)
+**实验室**：<a href="https://tony-hao.github.io/TAMLab/outcome.html" target="_blank" class="highlight-link">华南师范大学文本分析与挖掘实验室</a>
 
 ---
 
@@ -39,21 +39,21 @@ redirect_from:
 
 ## 研究与项目经历
 
-### 广东省药检所 GDIDC 合作项目
+### <a href="https://www.gdidc.org.cn/" target="_blank" class="highlight-link">广东省药检所 GDIDC</a> 合作项目
 
 **时间**：2025年10月 — 至今
 
-**导师**：[郝天永](https://tempdb.scholat.com/haoty) | [华南师范大学文本分析与挖掘实验室](https://tony-hao.github.io/TAMLab/outcome.html)
+**导师**：<a href="https://tempdb.scholat.com/haoty" target="_blank" class="highlight-link">郝天永</a> | <a href="https://tony-hao.github.io/TAMLab/outcome.html" target="_blank" class="highlight-link">华南师范大学文本分析与挖掘实验室</a>
 
-**合作单位**：[广东省药检所 GDIDC](https://www.gdidc.org.cn/)
+**合作单位**：<a href="https://www.gdidc.org.cn/" target="_blank" class="highlight-link">广东省药检所 GDIDC</a>
 
 研发药品标准智能解析与 Agent 知识引擎。
 
-### Oxford University STEM 暑期科研项目
+### <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">Oxford University</a> STEM 暑期科研项目
 
 **时间**：2025年8月
 
-**合作单位**：[Oxford University](https://www.ox.ac.uk/)
+**合作单位**：<a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">Oxford University</a>
 
 系统架构设计与量化建模，获 **Excellent** 评价。
 

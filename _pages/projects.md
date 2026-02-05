@@ -10,9 +10,9 @@ author_profile: true
 **2025年10月 - 至今**
 - 参与药物检验相关项目的研发工作
 
-### 牛津大学STEM跨学科项目：火星栖息地智能生存系统设计
+### <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学</a>STEM跨学科项目：火星栖息地智能生存系统设计
 **2025年8月**
-- 参加牛津大学STEM跨学科项目
+- 参加<a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学</a>STEM跨学科项目
 - 设计火星栖息地智能生存系统
 
 ### 全国大学生数学建模竞赛

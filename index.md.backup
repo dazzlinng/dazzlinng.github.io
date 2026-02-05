@@ -1,0 +1,512 @@
+---
+permalink: /
+title: "段宇昊"
+author_profile: true
+---
+
+<style>
+/* ============================================
+   中文学术主页 - 专业设计 v2
+   ============================================ */
+
+/* 基础重置与滚动行为 */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333; /* 深灰色正文 */
+  background: #f8f9fa; /* 极淡灰色背景 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- 桌面端布局 --- */
+/* 左侧固定边栏 */
+.sidebar {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-right: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+/* 右侧主内容区 */
+.page__content {
+  margin-left: 320px; /* 为左侧边栏留出空间 */
+  padding: 40px 50px;
+}
+
+/* 作者信息卡片 */
+.author-profile {
+  width: 100%;
+  text-align: left;
+}
+
+.author__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.author__name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.author__bio {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.author-links {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+  width: 100%;
+}
+.author-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.author-links ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.2s ease;
+}
+.author-links ul li a:hover {
+  color: #0056b3; /* 深蓝色 */
+}
+.author-links ul li a svg {
+  width: 18px;
+  height: 18px;
+  color: #888;
+}
+
+/* 下载简历按钮 */
+.author__cv-download {
+  margin-top: 25px;
+  width: 100%;
+}
+.author__cv-download .btn--primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0056b3; /* 深蓝色 */
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.author__cv-download .btn--primary:hover {
+  background-color: #004494;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* --- 通用内容区块 --- */
+section {
+  padding: 40px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e9ecef;
+}
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* 统一的 Section 标题 */
+h2.section-title {
+  font-size: 26px; /* 增大标题字号 */
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0056b3; /* 深蓝色下划线 */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.bio-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+.bio-text a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #0056b3;
+}
+.bio-text a:hover {
+  background-color: #e6f0ff;
+}
+
+/* 新闻动态 (Timeline/List) */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.news-list li {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f3f5;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+.news-list li:last-child { border-bottom: none; }
+.news-list strong {
+  font-weight: 600;
+  color: #555;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+.news-list a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+.news-list a:hover { text-decoration: underline; }
+
+/* 研究项目 (卡片化) */
+.research-item {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.research-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+h3.research-title {
+  font-size: 20px; /* 增大副标题 */
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.research-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 16px;
+}
+.research-meta a {
+  font-weight: 500;
+  color: #555;
+}
+.research-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.research-tech-item {
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 12px;
+  padding: 5px 10px;
+  background: #e6f0ff; /* 淡蓝色背景 */
+  color: #0056b3;     /* 深蓝色文字 */
+  border-radius: 5px;
+  font-weight: 500;
+}
+.research-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0056b3;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.research-link:hover { text-decoration: underline; }
+
+/* 专业技能 (卡片化) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.skills-category {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.skills-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+.skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills-item {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  background: #f1f3f5;
+  border-radius: 5px;
+}
+
+/* 简历下载区 */
+#resume { text-align: center; }
+#resume .masthead__cv-btn {
+  display: inline-block;
+  text-decoration: none;
+}
+#resume .masthead__cv-btn:hover {
+    color: #fff;
+}
+
+
+/* --- 响应式设计 --- */
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    position: relative; /* 取消固定 */
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+    height: auto;
+    overflow-y: visible;
+  }
+  .page__content {
+    margin-left: 0; /* 取消边距 */
+    padding: 30px;
+  }
+  .author-profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .author__avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+  }
+  .author-links { display: none; } /* 移动端隐藏详细链接 */
+  .author__cv-download { display: none; } /* 移动端隐藏按钮 */
+}
+
+@media (max-width: 600px) {
+  .page__content { padding: 20px; }
+  h2.section-title { font-size: 22px; }
+  h3.research-title { font-size: 18px; }
+
+  .news-list li {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .news-list strong { min-width: auto; }
+}
+</style>
+
+<!-- 关于我 -->
+<section id="about">
+  <h2 class="section-title">关于我</h2>
+
+  <p class="bio-text">
+    我是<strong>段宇昊</strong>，华南师范大学计算机科学与技术专业本科生（2023–2027）。
+    我的研究方向为<strong>大语言模型（LLM）</strong>、<strong>AI Agent</strong> 智能体开发与<strong>数学建模</strong>，
+    致力于探索前沿 AI 技术在实际场景中的创新应用。
+  </p>
+  <p class="bio-text">
+    目前，我跟随<a href="https://tempdb.scholat.com/haoty" target="_blank" rel="noopener noreferrer"><strong>郝天永教授</strong></a>开展相关研究工作。郝天永教授领导<a href="https://tony-hao.github.io/TAMLab/index.html" target="_blank" rel="noopener noreferrer"><strong>文本分析与挖掘实验室</strong></a>，
+    在该实验室的科研项目中，我积累了丰富的实践经验与专业知识。
+  </p>
+
+  <div class="bio-education">
+    <div class="bio-education-item">
+      <span class="bio-education-label">学校</span>
+      <span class="bio-education-value">华南师范大学 (South China Normal University)</span>
+    </div>
+    <div class="bio-education-item">
+      <span class="bio-education-label">专业</span>
+      <span class="bio-education-value">计算机科学与技术</span>
+    </div>
+    <div class="bio-education-item">
+      <span class="bio-education-label">时间</span>
+      <span class="bio-education-value">2023 – 2027</span>
+    </div>
+  </div>
+
+  <div class="bio-highlights">
+    <span class="highlight-item">GPA 3.87/5.0 (Top 5%)</span>
+    <span class="highlight-item">IELTS 7.5</span>
+    <span class="highlight-item">CET-6: 535</span>
+    <span class="highlight-item">全国数学建模省二等奖</span>
+    <span class="highlight-item">本科生优秀奖学金 (2024–2025)</span>
+  </div>
+</section>
+
+<!-- 新闻动态 -->
+<section id="news">
+  <h2 class="section-title">新闻动态</h2>
+
+  <ul class="news-list">
+    <li><strong>2025.10 — 至今</strong> 参与<a href="https://gdidc.gd.gov.cn/" target="_blank" rel="noopener noreferrer">广东省药检所 GDIDC 合作项目</a>，研发药品标准智能解析与 Agent 知识引擎</li>
+    <li><strong>2025.08</strong> 完成<a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">牛津大学 STEM 暑期科研项目</a>（火星熔岩管资源转化系统），获 Excellent 评价</li>
+    <li><strong>2025.07</strong> 苏州伟创电气设备技术有限公司研发助理实习（深圳）</li>
+    <li><strong>2024.09</strong> 全国大学生数学建模竞赛获广东省二等奖</li>
+  </ul>
+</section>
+
+<!-- 研究项目 -->
+<section id="research">
+  <h2 class="section-title">研究项目</h2>
+
+  <article class="research-item">
+    <h3 class="research-title">药品标准智能解析与 Agent 知识引擎</h3>
+    <div class="research-meta">2025.10 — 至今 · <a href="https://gdidc.gd.gov.cn/" target="_blank" rel="noopener noreferrer">广东省药检所 GDIDC</a> · 指导教师：<a href="https://tempdb.scholat.com/haoty" target="_blank" rel="noopener noreferrer">郝天永教授</a></div>
+    <div class="research-tech">
+      <span class="research-tech-item">Qwen-32B</span>
+      <span class="research-tech-item">CoT</span>
+      <span class="research-tech-item">RAG</span>
+      <span class="research-tech-item">Knowledge Graph</span>
+    </div>
+    <p class="research-desc">
+      采用规则抽取 + LLM 混合架构，实现药品标准文档的智能解析与知识图谱构建，
+      利用思维链推理策略提升理解准确率。
+    </p>
+    <a href="https://github.com/dazzlinng/drug-inspection-project" class="research-link" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+      </svg>
+      [Code]
+    </a>
+  </article>
+
+  <article class="research-item">
+    <h3 class="research-title">牛津大学 STEM — 火星熔岩管资源转化系统</h3>
+    <div class="research-meta">2025.08 · <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">牛津大学 (Oxford University)</a></div>
+    <div class="research-tech">
+      <span class="research-tech-item">Differential Modeling</span>
+      <span class="research-tech-item">System Optimization</span>
+    </div>
+    <p class="research-desc">
+      针对火星熔岩管居住区的资源转化问题，建立资源转化微分模型，
+      优化封闭系统内的物质循环与能量分配。项目获 Excellent 评价。
+    </p>
+  </article>
+
+  <article class="research-item">
+    <h3 class="research-title">全国大学生数学建模竞赛 — "板凳龙"动力学仿真</h3>
+    <div class="research-meta">2024.09 · 广东省二等奖</div>
+    <div class="research-tech">
+      <span class="research-tech-item">Archimedean Spiral</span>
+      <span class="research-tech-item">Numerical Solutions</span>
+    </div>
+    <p class="research-desc">
+      基于阿基米德螺线理论建立运动方程，采用微分方程数值解方法进行仿真优化，
+      分析龙头速度与龙身节距的数学关系。
+    </p>
+  </article>
+</section>
+
+<!-- 专业技能 -->
+<section id="skills">
+  <h2 class="section-title">专业技能</h2>
+
+  <div class="skills-grid">
+    <div class="skills-category">
+      <h3 class="skills-title">编程语言</h3>
+      <div class="skills-items">
+        <span class="skills-item">Python</span>
+        <span class="skills-item">C / C++</span>
+        <span class="skills-item">Java</span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-title">AI 与大模型</h3>
+      <div class="skills-items">
+        <span class="skills-item">LLM</span>
+        <span class="skills-item">RAG</span>
+        <span class="skills-item">AI Agent</span>
+        <span class="skills-item">Prompt Engineering</span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-title">工具与框架</h3>
+      <div class="skills-items">
+        <span class="skills-item">LangChain</span>
+        <span class="skills-item">Claude</span>
+        <span class="skills-item">DeepSeek</span>
+        <span class="skills-item">Gemini</span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="skills-title">其他能力</h3>
+      <div class="skills-items">
+        <span class="skills-item">数学建模</span>
+        <span class="skills-item">数据分析</span>
+        <span class="skills-item">机器学习</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 简历 -->
+<section id="resume">
+  <h2 class="section-title">在线简历 & 下载</h2>
+  <p class="bio-text" style="text-align: center; margin-bottom: 30px;">
+    该简历可用于求职和科研展示。
+  </p>
+  <div style="text-align: center;">
+    <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn">在线查看简历</a>
+    <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">下载 PDF 简历</a>
+  </div>
+</section>

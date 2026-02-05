@@ -37,13 +37,13 @@ redirect_from:
 
 ### 研究与项目经历
 
-#### 广东省药检所 GDIDC 合作项目
+#### <a href="https://gdidc.gd.gov.cn/" target="_blank" class="highlight-link">广东省药检所 GDIDC</a> 合作项目
 
 **时间**：2025年10月 — 至今
 
 研发药品标准智能解析与 Agent 知识引擎。
 
-#### Oxford University STEM 暑期科研项目
+#### <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">Oxford University</a> STEM 暑期科研项目
 
 **时间**：2025年8月
 
@@ -92,5 +92,5 @@ redirect_from:
 - 📧 **邮箱**：1440703119@qq.com
 - 📱 **电话**：+86 133-1643-1388
 - 📍 **地点**：广东广州
-- 💼 **LinkedIn**：[yuhao-duan-9b1477361](https://www.linkedin.com/in/yuhao-duan-9b1477361)
+- 💼 **LinkedIn**：[段宇昊](https://www.linkedin.com/in/danieldazzling/)
 - 💻 **GitHub**：[dazzlinng](https://github.com/dazzlinng)

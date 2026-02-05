@@ -14,4 +14,161 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Custom CSS for modern academic theme -->
+<style>
+  /* Smooth scrolling and scroll offset for fixed header */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for custom page navigation only */
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Minimal academic links */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+  }
+
+  /* Hide the entire top masthead navigation (including name and menu) */
+  .masthead {
+    display: none !important;
+  }
+
+  /* Ensure section titles have enough top margin when jumping to anchors */
+  .page__content h2[id],
+  .page__content h3[id] {
+    scroll-margin-top: 80px;
+    margin-top: 2.5rem !important;
+  }
+
+  /* Remove decorative elements for minimalist design */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Section titles */
+  .page__title {
+    display: none;
+  }
+
+  /* Anchor highlight animation */
+  .anchor-highlight {
+    animation: highlightPulse 1.5s ease-in-out;
+  }
+
+  @keyframes highlightPulse {
+    0% {
+      background-color: transparent;
+    }
+    20% {
+      background-color: rgba(0, 102, 204, 0.1);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+</style>
+
+<!-- Smooth scroll and active nav highlighting -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Calculate header offset (only page-navigation, masthead is hidden)
+  function getHeaderOffset() {
+    const pageNav = document.querySelector('.page-navigation');
+    let offset = 20; // Base padding for spacing
+
+    if (pageNav) {
+      offset += pageNav.offsetHeight;
+    }
+
+    return offset;
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        const headerOffset = getHeaderOffset();
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Add visual feedback
+        setTimeout(() => {
+          target.classList.add('anchor-highlight');
+          setTimeout(() => {
+            target.classList.remove('anchor-highlight');
+          }, 1500);
+        }, 300);
+      }
+    });
+  });
+
+  // Active nav highlighting on scroll
+  const sections = document.querySelectorAll('[id]');
+  const navLinks = document.querySelectorAll('.page-navigation__link');
+
+  function updateActiveNav() {
+    const headerOffset = getHeaderOffset();
+    const scrollPos = window.scrollY + headerOffset + 30;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      const correspondingLink = document.querySelector(`.page-navigation__link[href="#${id}"]`);
+
+      if (correspondingLink && scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        correspondingLink.classList.add('active');
+      }
+    });
+  }
+
+  // Throttle scroll event
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        updateActiveNav();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Recalculate on resize
+  window.addEventListener('resize', updateActiveNav);
+
+  // Initial check
+  setTimeout(updateActiveNav, 100);
+});
+</script>
+
+<style>
+/* Active navigation link styling */
+.page-navigation__link.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+</style>
+
 <!-- end custom head snippets -->

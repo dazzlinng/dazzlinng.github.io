@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "段宇昊"
 description              : &description "段宇昊的个人学术主页 - 华南师范大学计算机科学与技术专业本科生，研究方向为机器学习、自然语言处理和智能问答"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://dazzlinng.github.io
-baseurl                  : "https://dazzlinng.github.io"
+baseurl                  : ""  # 留空，因为使用用户级 GitHub Pages（username.github.io）
 repository               : "dazzlinng/dazzling.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -25,14 +25,14 @@ author:
   avatar           : "profile.png"
   name             : "段宇昊"
   pronouns         : "he/him"
-  bio              : "华南师范大学 (211) 本科生<br>研究方向：计算机视觉、AI协作、数学建模<br>导师：<a href='https://tempdb.scholat.com/haoty' target='_blank'>郝天永</a> | <a href='https://tony-hao.github.io/TAMLab/outcome.html' target='_blank'>文本分析与挖掘实验室</a>"
+  bio              : "华南师范大学 · 计算机科学与技术<br>本科生 (2023–2027)<br><br>🔬 研究方向：大语言模型、AI Agent、RAG系统<br>💡 兴趣爱好：探索LLM在医疗、航天等领域的应用，阅读AI前沿论文，参与开源项目"
   location         : "广州，中国"
-  employer         : "<a href='https://www.scnu.edu.cn/' target='_blank'>华南师范大学</a>"
-  uri              : https://www.scnu.edu.cn/
+  employer         : "华南师范大学"
+  uri              :
   email            : "1440703119@qq.com"
 
   # Academic websites
-  academia         : "https://tempdb.scholat.com/haoty"
+  academia         :
   arxiv            : # URL
   googlescholar    : # URL
   inspire-hep      : # URL
@@ -64,7 +64,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "yuhao-duan-9b1477361"
+  linkedin         : "danieldazzling"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

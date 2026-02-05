@@ -59,23 +59,32 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
 
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    font-size: 18px;
+  }
+
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 4px 0;
   }
 }
 
 .masthead__menu-item.selected a {
   color: var(--global-text-color);
   font-weight: 700;
-  border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none; /* Move this here */
-  cursor: default; /* Move this here too */
+  border-bottom: 2px solid var(--global-base-color);
+  pointer-events: none;
+  cursor: default;
 }
 
 .masthead__menu-item.selected a:hover {
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-text-color);
-  /* No need to repeat pointer-events and cursor here */
+  color: var(--global-base-color);
+  border-bottom: 2px solid var(--global-base-color);
 }

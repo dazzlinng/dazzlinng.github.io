@@ -1,21 +1,19 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
+# main navigation links
 main:
-  - title: "简介"
-    url: /
+  - title: "关于我"
+    url: /#about
 
-  - title: "新闻"
-    url: /news/
+  - title: "研究方向"
+    url: /#research-focus
 
-  - title: "项目经历"
-    url: /publications/
+  - title: "新闻动态"
+    url: /#news
 
-  - title: "CV"
-    url: /cv/
+  - title: "研究项目"
+    url: /#projects
+
+  - title: "专业技能"
+    url: /#skills
+
+  - title: "简历"
+    url: /#resume

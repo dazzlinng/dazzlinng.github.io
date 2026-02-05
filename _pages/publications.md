@@ -10,9 +10,9 @@ author_profile: true
 
 **时间**：2025年10月 — 至今
 
-**合作单位**：[广东省药检所 GDIDC](https://www.gdidc.org.cn/)
+**合作单位**：<a href="https://www.gdidc.org.cn/" target="_blank" class="highlight-link">广东省药检所 GDIDC</a>
 
-**导师**：[郝天永](https://tempdb.scholat.com/haoty) | [华南师范大学文本分析与挖掘实验室](https://tony-hao.github.io/TAMLab/outcome.html)
+**导师**：<a href="https://tempdb.scholat.com/haoty" target="_blank" class="highlight-link">郝天永</a> | <a href="https://tony-hao.github.io/TAMLab/outcome.html" target="_blank" class="highlight-link">华南师范大学文本分析与挖掘实验室</a>
 
 **描述**：研发药品标准智能解析与 Agent 知识引擎，致力于将人工智能技术应用于药品标准文档的智能解析与分析。
 
@@ -20,11 +20,11 @@ author_profile: true
 
 ---
 
-### Oxford University STEM 项目 — 系统架构设计与量化建模
+### <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">Oxford University</a> STEM 项目 — 系统架构设计与量化建模
 
 **时间**：2025年8月
 
-**合作单位**：[Oxford University](https://www.ox.ac.uk/)
+**合作单位**：<a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">Oxford University</a>
 
 **角色**：系统架构设计与量化建模
 
