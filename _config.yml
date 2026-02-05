@@ -25,14 +25,14 @@ author:
   avatar           : "profile.png"
   name             : "段宇昊"
   pronouns         : "he/him"
-  bio              : "华南师范大学 (211) 本科生<br>研究方向：计算机视觉、AI协作、数学建模"
+  bio              : "华南师范大学 (211) 本科生<br>研究方向：计算机视觉、AI协作、数学建模<br>导师：<a href='https://tempdb.scholat.com/haoty' target='_blank'>郝天永</a> | <a href='https://tony-hao.github.io/TAMLab/outcome.html' target='_blank'>文本分析与挖掘实验室</a>"
   location         : "广州，中国"
-  employer         : "华南师范大学"
-  uri              : # URL
+  employer         : "<a href='https://www.scnu.edu.cn/' target='_blank'>华南师范大学</a>"
+  uri              : https://www.scnu.edu.cn/
   email            : "1440703119@qq.com"
 
   # Academic websites
-  academia         : # URL
+  academia         : "https://tempdb.scholat.com/haoty"
   arxiv            : # URL
   googlescholar    : # URL
   inspire-hep      : # URL
@@ -49,7 +49,7 @@ author:
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : "dazzling"
+  github           : "dazzlinng"
   kaggle           : # Username
   stackoverflow    : # Username or user number
 

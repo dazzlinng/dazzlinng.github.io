@@ -54,4 +54,4 @@ redirect_from:
 - 📱 **电话**：+86 133-1643-1388
 - 📍 **地点**：广东广州
 - 💼 **LinkedIn**：[yuhao-duan-9b1477361](https://www.linkedin.com/in/yuhao-duan-9b1477361)
-- 💻 **GitHub**：[dazzling](https://github.com/dazzling)
+- 💻 **GitHub**：[dazzlinng](https://github.com/dazzlinng)

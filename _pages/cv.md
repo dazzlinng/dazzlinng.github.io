@@ -11,13 +11,19 @@ redirect_from:
 
 ## 教育背景
 
-### 华南师范大学 | 计算机科学与技术 | 本科
+### [华南师范大学](https://www.scnu.edu.cn/) | 计算机科学与技术 | 本科
 
 **时间**：2023年9月 — 2027年6月
 
 - **GPA**：3.87 / 5.0
 - **主修课程**：数据结构、操作系统、编译原理、计算机网络、数据库科学基础应用、离散数学、微积分、线性代数
 - **奖学金**：2024-2025 学年度本科生优秀学生奖学金
+
+### 导师信息
+
+**导师**：[郝天永](https://tempdb.scholat.com/haoty)
+
+**实验室**：[华南师范大学文本分析与挖掘实验室](https://tony-hao.github.io/TAMLab/outcome.html)
 
 ---
 
@@ -37,11 +43,17 @@ redirect_from:
 
 **时间**：2025年10月 — 至今
 
+**导师**：[郝天永](https://tempdb.scholat.com/haoty) | [华南师范大学文本分析与挖掘实验室](https://tony-hao.github.io/TAMLab/outcome.html)
+
+**合作单位**：[广东省药检所 GDIDC](https://www.gdidc.org.cn/)
+
 研发药品标准智能解析与 Agent 知识引擎。
 
 ### Oxford University STEM 暑期科研项目
 
 **时间**：2025年8月
+
+**合作单位**：[Oxford University](https://www.ox.ac.uk/)
 
 系统架构设计与量化建模，获 **Excellent** 评价。
 
@@ -124,7 +136,7 @@ redirect_from:
 - 📱 **电话**：+86 133-1643-1388
 - 📍 **地点**：广东广州
 - 💼 **LinkedIn**：[yuhao-duan-9b1477361](https://www.linkedin.com/in/yuhao-duan-9b1477361)
-- 💻 **GitHub**：[dazzling](https://github.com/dazzling)
+- 💻 **GitHub**：[dazzlinng](https://github.com/dazzlinng)
 
 ---
 

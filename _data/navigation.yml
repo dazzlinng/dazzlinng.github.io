@@ -8,17 +8,14 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "个人简介"
+  - title: "简介"
     url: /
 
-  - title: "新闻动态"
+  - title: "新闻"
     url: /news/
 
-  - title: "出版物"
+  - title: "项目经历"
     url: /publications/
 
-  - title: "项目经历"
-    url: /projects/
-
-  - title: "简历"
+  - title: "CV"
     url: /cv/
