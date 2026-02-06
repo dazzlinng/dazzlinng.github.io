@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute('id');
-                
+
                 navLinks.forEach(link => {
                     link.parentElement.classList.remove("active");
                     if (link.getAttribute("href").includes(id)) {
@@ -27,3 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(section);
     });
 });
+
+if (typeof jQuery !== 'undefined') {
+    jQuery(document).ready(function() {
+        setTimeout(function() {
+            const $nav = jQuery('#site-nav');
+            const $vlinks = $nav.find('.visible-links');
+            const $hlinks = $nav.find('.hidden-links');
+            const $btn = $nav.find('button');
+
+            $hlinks.children().appendTo($vlinks);
+            $btn.addClass('hidden');
+
+            jQuery(window).off('resize', jQuery.fnGreedyNavUpdate);
+        }, 100);
+    });
+}

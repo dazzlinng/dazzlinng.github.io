@@ -47,7 +47,7 @@ redirect_from:
 
 **时间**：2025年8月
 
-系统架构设计与量化建模，获 **Excellent** 评价。
+系统架构设计与量化建模，获 <strong style="color: inherit;">Excellent</strong> 评价。
 
 #### 全国大学生数学建模竞赛
 

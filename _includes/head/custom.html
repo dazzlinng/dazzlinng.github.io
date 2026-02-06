@@ -38,9 +38,34 @@
     text-decoration: underline;
   }
 
-  /* Hide the entire top masthead navigation (including name and menu) */
+  /* Show the masthead navigation */
   .masthead {
-    display: none !important;
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 20 !important;
+    height: auto !important;
+    min-height: 50px !important;
+  }
+
+  /* Ensure masthead inner content is visible */
+  .masthead__inner-wrap {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Ensure masthead menu is visible */
+  .masthead__menu {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Ensure navigation links are visible */
+  .masthead__menu-item {
+    display: inline-block !important;
+    position: relative !important;
+    color: #333 !important;
   }
 
   /* Ensure section titles have enough top margin when jumping to anchors */
@@ -61,6 +86,110 @@
     display: none;
   }
 
+  /* 调整页面最大宽度 - 让内容区域更宽 */
+  .masthead__inner-wrap {
+    max-width: 1400px !important;
+  }
+
+  #main {
+    max-width: 1200px !important;
+  }
+
+  /* 确保导航栏有背景色，避免内容穿透 */
+  .masthead {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  /* 调整 body 的 padding 以适应导航栏 */
+  body {
+    padding-top: 60px !important;
+  }
+
+  /* 让导航菜单项横向显示 - 覆盖 greedy-nav 的 table 布局 */
+  .custom-nav .visible-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .custom-nav .visible-links li {
+    display: inline-block !important;
+    float: none !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .masthead__menu-item {
+    display: inline-block !important;
+    float: none !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 让汉堡菜单按钮不可见但保留功能 */
+  .custom-nav button {
+    display: none !important;
+  }
+
+  /* 确保所有链接都显示在visible-links中，不被移到hidden-links */
+  .custom-nav .hidden-links {
+    display: none !important;
+  }
+
+  /* 确保所有菜单项都可见 */
+  .masthead__menu .visible-links .masthead__menu-item {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .custom-nav .visible-links a {
+    display: inline-block !important;
+    margin: 0 0.5rem !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .custom-nav .visible-links a:hover {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+  }
+
+  /* 确保 masthead__menu 中的链接也可见 */
+  .masthead__menu-item a {
+    color: #333 !important;
+    display: inline-block !important;
+  }
+
+  /* 调整导航项间距 */
+  .masthead__menu-item:not(:last-child) {
+    margin-right: 0.5rem !important;
+  }
+
+  /* 移动端响应式 - 允许横向滚动 */
+  @media (max-width: 1200px) {
+    .masthead__inner-wrap {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+
+    .masthead__menu .visible-links {
+      overflow-x: auto !important;
+      justify-content: flex-start !important;
+    }
+
+    /* 移动端隐藏滚动条但保持可滚动 */
+    .masthead__menu .visible-links::-webkit-scrollbar {
+      height: 0px !important;
+      background: transparent !important;
+    }
+  }
+
   /* Anchor highlight animation */
   .anchor-highlight {
     animation: highlightPulse 1.5s ease-in-out;
@@ -79,16 +208,14 @@
   }
 </style>
 
-<!-- Smooth scroll and active nav highlighting -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Calculate header offset (only page-navigation, masthead is hidden)
   function getHeaderOffset() {
-    const pageNav = document.querySelector('.page-navigation');
-    let offset = 20; // Base padding for spacing
+    const masthead = document.querySelector('.masthead');
+    let offset = 20;
 
-    if (pageNav) {
-      offset += pageNav.offsetHeight;
+    if (masthead) {
+      offset += masthead.offsetHeight;
     }
 
     return offset;
@@ -124,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Active nav highlighting on scroll
   const sections = document.querySelectorAll('[id]');
-  const navLinks = document.querySelectorAll('.page-navigation__link');
+  const navLinks = document.querySelectorAll('.masthead__menu-item a');
 
   function updateActiveNav() {
     const headerOffset = getHeaderOffset();
@@ -134,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const top = section.offsetTop;
       const height = section.offsetHeight;
       const id = section.getAttribute('id');
-      const correspondingLink = document.querySelector(`.page-navigation__link[href="#${id}"]`);
+      const correspondingLink = document.querySelector(`.masthead__menu-item a[href="#${id}"]`);
 
       if (correspondingLink && scrollPos >= top && scrollPos < top + height) {
         navLinks.forEach(link => link.classList.remove('active'));
@@ -165,9 +292,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style>
 /* Active navigation link styling */
-.page-navigation__link.active {
-  text-decoration: underline;
-  font-weight: 600;
+.masthead__menu-item a.active {
+  color: var(--global-base-color) !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid var(--global-base-color) !important;
 }
 </style>
 

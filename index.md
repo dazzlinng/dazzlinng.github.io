@@ -16,7 +16,7 @@ author_profile: true
 | **学校** | 华南师范大学 (South China Normal University) |
 | **专业** | 计算机科学与技术 |
 | **时间** | 2023 – 2027 (预计) |
-| **GPA** | <span class="highlight-important">3.87/5.0</span> |
+| **GPA** | 3.87/5.0 |
 
 ### 荣誉与成就
 
@@ -24,14 +24,14 @@ author_profile: true
 - **IELTS 7.5** — 英语能力认证
 - **CET-6: 535** — 大学英语六级
 - **全国大学生数学建模竞赛广东省二等奖** (2024)
-- <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 STEM 暑期科研项目 — Excellent 评价</a> (2025)
+- <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 STEM 暑期科研项目</a> — <strong>Excellent</strong> 评价 (2025)
 
 ---
 
 ## 🎯 研究方向
 {: #research-focus}
 
-我的研究聚焦于**大语言模型（LLM）**与**AI Agent 智能体**的前沿技术，结合**数学建模**方法，探索大模型在**医疗、航天**等垂直场景中的应用。主要研究方向包括：
+我的研究聚焦于**大语言模型（LLM）**与**AI Agent 智能体**的前沿技术，结合**数学建模**与**RAG检索增强**，构建高性能智能问答与知识推理系统。主要研究方向包括：
 
 - **大模型增强技术**：基于检索增强生成（RAG）与知识图谱的混合架构
 - **多智能体系统**：协作机制设计与任务分解优化策略
@@ -46,14 +46,14 @@ author_profile: true
 <div class="news-item">
   <span class="news-item__date">2025.10 — 至今</span>
   <span class="news-item__content">
-    与<a href="https://gdidc.gd.gov.cn/" target="_blank" class="highlight-link">广东省药检所（GDIDC）</a>合作，主导开发基于 **Qwen-32B、RAG 与知识图谱** 的药品标准智能解析与 Agent 知识引擎，通过思维链推理提升复杂文档的理解准确率。
+    与<a href="https://gdidc.gd.gov.cn/" target="_blank" class="highlight-link">广东省药检所（GDIDC）</a>合作，主导开发基于 <strong>Qwen-32B、RAG 与知识图谱</strong> 的药品标准智能解析与 Agent 知识引擎，通过思维链推理提升复杂文档的理解准确率。
   </span>
 </div>
 
 <div class="news-item">
   <span class="news-item__date">2025.08</span>
   <span class="news-item__content">
-    完成<a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 STEM 暑期科研项目</a>（火星熔岩管资源转化系统），建立资源转化微分模型，优化封闭系统内的物质循环与能量分配。获 <span class="highlight-important">Excellent 评价</span>。
+    完成<a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 STEM 暑期科研项目</a>（火星熔岩管资源转化系统），建立资源转化微分模型，优化封闭系统内的物质循环与能量分配。获 <strong>Excellent</strong> 评价。
   </span>
 </div>
 
@@ -67,7 +67,7 @@ author_profile: true
 <div class="news-item">
   <span class="news-item__date">2024.09</span>
   <span class="news-item__content">
-    全国大学生数学建模竞赛获**广东省二等奖**，基于阿基米德螺线理论建立"板凳龙"运动方程，采用微分方程数值解方法进行仿真优化。
+    全国大学生数学建模竞赛获<strong>广东省二等奖</strong>，基于阿基米德螺线理论建立"板凳龙"运动方程，采用微分方程数值解方法进行仿真优化。
   </span>
 </div>
 
@@ -84,7 +84,9 @@ author_profile: true
   </div>
 
   <div class="project-description">
-    采用**规则抽取 + LLM 混合架构**，实现药品标准文档的智能解析与知识图谱构建。利用思维链推理策略提升理解准确率，构建垂直领域的智能问答系统。技术栈：Qwen-32B · CoT · RAG · Knowledge Graph
+    采用<strong>规则抽取 + LLM 混合架构</strong>，实现药品标准文档的智能解析与知识图谱构建。利用思维链推理策略提升理解准确率，构建垂直领域的智能问答系统。<br>
+
+    技术栈：Qwen-32B · CoT · RAG · Knowledge Graph
   </div>
 
   <a href="https://github.com/dazzlinng/drug-inspection-project" target="_blank" class="btn">📂 查看项目代码</a>
@@ -96,11 +98,13 @@ author_profile: true
   <h3>牛津大学 STEM — 火星熔岩管资源转化系统</h3>
 
   <div class="project-meta">
-    2025.08 | <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 (Oxford University)</a> | <span class="highlight-important">Excellent 评价</span>
+    2025.08 | <a href="https://www.ox.ac.uk/" target="_blank" class="highlight-link">牛津大学 (Oxford University)</a> | <strong>Excellent</strong> 评价
   </div>
 
   <div class="project-description">
-    针对火星熔岩管居住区的资源转化问题，建立**资源转化微分模型**，优化封闭系统内的物质循环与能量分配，为未来太空探索提供理论支持。技术栈：Differential Modeling · System Optimization
+    针对火星熔岩管居住区的资源转化问题，建立<strong>资源转化微分模型</strong>，优化封闭系统内的物质循环与能量分配，为未来太空探索提供理论支持。<br>
+
+    技术栈：Differential Modeling · System Optimization
   </div>
 </div>
 
@@ -110,11 +114,13 @@ author_profile: true
   <h3>全国大学生数学建模竞赛 — "板凳龙"动力学仿真</h3>
 
   <div class="project-meta">
-    2024.09 | **广东省二等奖**
+    2024.09 | <strong>广东省二等奖</strong>
   </div>
 
   <div class="project-description">
-    基于**阿基米德螺线理论**建立运动方程，采用微分方程数值解方法进行仿真优化，分析龙头速度与龙身节距的数学关系，实现传统民俗文化的数字化建模。技术栈：Archimedean Spiral · Numerical Solutions
+    基于<strong>阿基米德螺线理论</strong>建立运动方程，采用微分方程数值解方法进行仿真优化，分析龙头速度与龙身节距的数学关系，实现传统民俗文化的数字化建模。<br>
+
+    技术栈：Archimedean Spiral · Numerical Solutions
   </div>
 </div>
 
